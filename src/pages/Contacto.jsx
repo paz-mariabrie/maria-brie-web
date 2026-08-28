@@ -34,9 +34,9 @@ export default function Contacto() {
             <ContactCard
               icon={Mail}
               label="Correo"
-              value="paz@maria-brie.com"
+              value="comercial@maria-brie.com"
               action="Enviar correo"
-              href="mailto:paz@maria-brie.com"
+              href="mailto:comercial@maria-brie.com"
               text="Respuesta en menos de 24 hrs."
             />
             <ContactCard
@@ -51,9 +51,9 @@ export default function Contacto() {
             <ContactCard
               icon={Instagram}
               label="Instagram"
-              value="@mariabrie.mx"
+              value="@mariabrie"
               action="Ver más"
-              href="https://instagram.com/mariabrie.mx"
+              href="https://instagram.com/mariabrie"
               text="Descubre nuestro portafolio."
             />
           </div>
