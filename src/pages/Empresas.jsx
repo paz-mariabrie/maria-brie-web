@@ -12,65 +12,65 @@ const fadeUp = {
 export default function Empresas() {
   return (
     <>
-      {/* HERO con imagen */}
-      <section className="relative pt-40 pb-24 md:pt-52 md:pb-40 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/images/empresas-parfaits.jpg"
-            alt="Personalización corporativa María Brie"
-            className="w-full h-full object-cover"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(180deg, rgba(250,248,245,0.5) 0%, rgba(250,248,245,0.3) 60%, rgba(250,248,245,0.95) 100%)',
-            }}
-          />
-        </div>
+      {/* HERO — Foto lateral izquierda + texto derecha */}
+      <section
+        className="relative min-h-screen flex items-center pt-24 md:pt-0"
+        style={{ background: '#FAF8F5' }}
+      >
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+          {/* IZQUIERDA - Foto */}
+          <div className="relative order-1 lg:order-1 h-[60vh] lg:h-screen">
+            <img
+              src="/images/empresas-parfaits.jpg"
+              alt="Personalización corporativa María Brie"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-        <div className="relative max-w-[1400px] mx-auto px-6 md:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-3xl"
-          >
-            <div
-              className="mb-8 text-xs"
-              style={{
-                letterSpacing: '0.4em',
-                textTransform: 'uppercase',
-                color: '#8FA8BF',
-                fontWeight: 500,
-              }}
+          {/* DERECHA - Texto */}
+          <div className="order-2 lg:order-2 flex items-center px-6 md:px-10 lg:px-16 xl:px-24 py-16 lg:py-0">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="max-w-xl"
             >
-              — Empresas
-            </div>
-            <h1
-              className="mb-8"
-              style={{
-                fontFamily: 'Montserrat, sans-serif',
-                fontSize: 'clamp(40px, 6vw, 76px)',
-                fontWeight: 200,
-                letterSpacing: '0.02em',
-                lineHeight: 1.05,
-                color: '#2C3844',
-              }}
-            >
-              Detalles que<br />
-              <span style={{ fontStyle: 'italic', fontWeight: 300 }}>
-                fortalecen tu equipo.
-              </span>
-            </h1>
-            <p
-              className="text-lg leading-relaxed max-w-xl"
-              style={{ color: '#6B7A8A', fontWeight: 300 }}
-            >
-              Cumpleaños corporativos, coffee breaks, regalos y experiencias
-              diseñadas para elevar tu cultura y tu marca.
-            </p>
-          </motion.div>
+              <div
+                className="mb-8 text-xs"
+                style={{
+                  letterSpacing: '0.4em',
+                  textTransform: 'uppercase',
+                  color: '#8FA8BF',
+                  fontWeight: 500,
+                }}
+              >
+                — Empresas
+              </div>
+              <h1
+                className="mb-8"
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: 'clamp(36px, 5.5vw, 72px)',
+                  fontWeight: 200,
+                  letterSpacing: '0.02em',
+                  lineHeight: 1.05,
+                  color: '#2C3844',
+                }}
+              >
+                Detalles que<br />
+                <span style={{ fontStyle: 'italic', fontWeight: 300 }}>
+                  fortalecen tu equipo.
+                </span>
+              </h1>
+              <p
+                className="text-lg leading-relaxed"
+                style={{ color: '#6B7A8A', fontWeight: 300 }}
+              >
+                Cumpleaños corporativos, coffee breaks, regalos y experiencias
+                diseñadas para elevar tu cultura y tu marca.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
