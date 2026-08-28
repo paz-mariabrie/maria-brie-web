@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  background: #FAF8F5;
+  color: #2C3844;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selección de texto */
+*::selection {
+  background: #8FA8BF;
+  color: #FFFFFF;
+}
+
+/* Tipografía display */
+.font-display {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+/* Wordmark María Brie */
+.wordmark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.wordmark-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.65em;
+}
+
+/* Botones y focus */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #8FA8BF;
+  outline-offset: 4px;
+}
+
+/* Animación suave para todas las imágenes */
+img {
+  transition: transform 0.6s ease-out;
+}
+
+/* Scrollbar suave */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #8FA8BF;
+  border-radius: 4px;
+}
