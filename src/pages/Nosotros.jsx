@@ -62,8 +62,8 @@ export default function Nosotros() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             <motion.div {...fadeUp} className="rounded-2xl overflow-hidden aspect-[4/5]">
               <img
-                src="/images/postres-cake-vainilla.jpg"
-                alt="Cake artesanal María Brie"
+                src="/images/nosotros-galleta-manos.jpg"
+                alt="Repostería artesanal María Brie"
                 className="w-full h-full object-cover"
               />
             </motion.div>

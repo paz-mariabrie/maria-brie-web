@@ -21,8 +21,8 @@ export default function Empresas() {
           {/* IZQUIERDA - Foto */}
           <div className="relative order-1 lg:order-1 h-[60vh] lg:h-screen">
             <img
-              src="/images/empresas-parfaits.jpg"
-              alt="Personalización corporativa María Brie"
+              src="/images/empresas-lancome.jpg"
+              alt="Personalización corporativa María Brie · Lancôme"
               className="w-full h-full object-cover"
             />
           </div>

@@ -27,11 +27,11 @@ export default function Eventos() {
         style={{ background: '#FAF8F5' }}
       >
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 min-h-screen">
-          {/* IZQUIERDA - Foto Lancôme */}
+          {/* IZQUIERDA - Foto */}
           <div className="relative order-1 lg:order-1 h-[60vh] lg:h-screen">
             <img
-              src="/images/eventos-lancome.jpg"
-              alt="Mesas de postres María Brie · Evento corporativo Lancôme"
+              src="/images/empresas-parfaits.jpg"
+              alt="Mesas de postres María Brie · Parfaits Hecho para ti"
               className="w-full h-full object-cover"
             />
           </div>
