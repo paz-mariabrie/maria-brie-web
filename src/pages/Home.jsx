@@ -380,8 +380,8 @@ export default function Home() {
               className="relative rounded-2xl overflow-hidden aspect-[4/3]"
             >
               <img
-                src="/images/empresas-onu.jpg"
-                alt="Coffee break corporativo ONU"
+                src="/images/empresas-amazon.jpg"
+                alt="Cupcakes personalizados para Amazon"
                 className="w-full h-full object-cover"
               />
               <div
@@ -399,7 +399,7 @@ export default function Home() {
                     textTransform: 'uppercase',
                   }}
                 >
-                  Reunión ejecutiva · ONU
+                  Personalización · Amazon
                 </div>
                 <div
                   style={{
@@ -410,7 +410,7 @@ export default function Home() {
                     letterSpacing: '0.02em',
                   }}
                 >
-                  Servicio impecable, entregado con precisión.
+                  Cupcakes con tu marca en cada detalle.
                 </div>
               </div>
             </motion.div>
