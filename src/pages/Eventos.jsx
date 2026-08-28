@@ -11,9 +11,9 @@ const fadeUp = {
 
 const eventos = [
   { src: '/images/eventos-3anos.jpg', label: 'Cumpleaños infantil', description: 'Celebraciones familiares con detalles temáticos y postres a la medida.' },
-  { src: '/images/eventos-otono.jpg', label: 'Estacional · Otoño', description: 'Mesas curadas con paleta y sabores de temporada.' },
+  { src: '/images/eventos-halloween.jpg', label: 'Estacional · Otoño', description: 'Mesas curadas con paleta y sabores de temporada.' },
   { src: '/images/eventos-valentina.jpg', label: 'Primer año', description: 'Momentos únicos diseñados con dulzura y precisión.' },
-  { src: '/images/eventos-halloween.jpg', label: 'Halloween', description: 'Piezas temáticas con detalles cuidados hasta el último elemento.' },
+  { src: '/images/eventos-otono.jpg', label: 'Halloween', description: 'Piezas temáticas con detalles cuidados hasta el último elemento.' },
   { src: '/images/eventos-navidad.jpg', label: 'Navidad', description: 'Mesas navideñas premium para cerrar el año con estilo.' },
   { src: '/images/eventos-perfumeria.jpg', label: 'Corporativo · Perfumería', description: 'Eventos corporativos de alta gama y branding integrado.' },
 ]
