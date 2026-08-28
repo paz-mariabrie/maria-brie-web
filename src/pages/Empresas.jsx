@@ -108,13 +108,13 @@ export default function Empresas() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             <SolutionCard
-              image="/images/eventos-3anos.jpg"
+              image="/images/empresas-cupcakes-oro.jpg"
               number="01"
               title="Cumpleaños corporativos"
               text="Un detalle que dice: aquí importas. Transforma cada cumpleaños laboral en un momento auténtico de reconocimiento."
             />
             <SolutionCard
-              image="/images/postres-galletas.jpg"
+              image="/images/empresas-onu.jpg"
               number="02"
               title="Coffee breaks y reuniones"
               text="Pausas que elevan la conversación. Repostería horneada, práctica y sofisticada para acompañar reuniones ejecutivas."
