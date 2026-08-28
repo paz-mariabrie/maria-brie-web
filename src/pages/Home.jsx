@@ -12,134 +12,107 @@ const fadeUp = {
 export default function Home() {
   return (
     <>
-      {/* ============ HERO ============ */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Foto de fondo */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/hero-cakes.jpg"
-            alt="Repostería artesanal María Brie"
-            className="w-full h-full object-cover"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(180deg, rgba(250,248,245,0.4) 0%, rgba(250,248,245,0.2) 50%, rgba(250,248,245,0.85) 100%)',
-            }}
-          />
-        </div>
-
-        {/* Contenido */}
-        <div className="relative max-w-[1400px] mx-auto px-6 md:px-10 pt-32 pb-20 w-full">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-3xl"
-          >
-            {/* Eyebrow */}
-            <div
-              className="mb-8 text-xs"
-              style={{
-                letterSpacing: '0.4em',
-                textTransform: 'uppercase',
-                color: '#8FA8BF',
-                fontWeight: 500,
-              }}
-            >
-              — Repostería artesanal
-            </div>
-
-            {/* Título principal */}
-            <h1
-              className="mb-8"
-              style={{
-                fontFamily: 'Montserrat, sans-serif',
-                fontSize: 'clamp(40px, 7vw, 84px)',
-                fontWeight: 200,
-                letterSpacing: '0.02em',
-                lineHeight: 1.05,
-                color: '#2C3844',
-              }}
-            >
-              Diseñamos<br />
-              <span style={{ fontStyle: 'italic', fontWeight: 300 }}>
-                experiencias dulces
-              </span>
-              <br />
-              con intención.
-            </h1>
-
-            {/* Subtítulo */}
-            <p
-              className="max-w-xl mb-12 text-lg leading-relaxed"
-              style={{ color: '#6B7A8A', fontWeight: 300 }}
-            >
-              Repostería premium para empresas, eventos y familias
-              que cuidan cada detalle.
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <Link
-                to="/empresas"
-                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full transition-all"
-                style={{
-                  background: '#8FA8BF',
-                  color: '#FFFFFF',
-                  fontSize: 13,
-                  letterSpacing: '0.2em',
-                  textTransform: 'uppercase',
-                  fontWeight: 500,
-                }}
-              >
-                Explorar servicios
-                <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link
-                to="/contacto"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-full transition-all"
-                style={{
-                  background: 'transparent',
-                  color: '#2C3844',
-                  border: '1.5px solid rgba(44, 56, 68, 0.2)',
-                  fontSize: 13,
-                  letterSpacing: '0.2em',
-                  textTransform: 'uppercase',
-                  fontWeight: 500,
-                }}
-              >
-                Contactar
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Scroll hint */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        >
-          <div
-            className="text-xs"
-            style={{
-              color: '#8FA8BF',
-              letterSpacing: '0.3em',
-              textTransform: 'uppercase',
-            }}
-          >
-            Explora
+      {/* ============ HERO — Foto lateral izquierda + texto derecha ============ */}
+      <section
+        className="relative min-h-screen flex items-center pt-24 md:pt-0"
+        style={{ background: '#FAF8F5' }}
+      >
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+          {/* IZQUIERDA - Foto */}
+          <div className="relative order-1 lg:order-1 h-[60vh] lg:h-screen">
+            <img
+              src="/images/hero-cakes.jpg"
+              alt="Repostería artesanal María Brie"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-px h-8"
-            style={{ background: '#8FA8BF' }}
-          />
-        </motion.div>
+
+          {/* DERECHA - Texto */}
+          <div className="order-2 lg:order-2 flex items-center px-6 md:px-10 lg:px-16 xl:px-24 py-16 lg:py-0">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="max-w-xl"
+            >
+              {/* Eyebrow */}
+              <div
+                className="mb-8 text-xs"
+                style={{
+                  letterSpacing: '0.4em',
+                  textTransform: 'uppercase',
+                  color: '#8FA8BF',
+                  fontWeight: 500,
+                }}
+              >
+                — Repostería artesanal
+              </div>
+
+              {/* Título principal */}
+              <h1
+                className="mb-8"
+                style={{
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: 'clamp(36px, 5.5vw, 72px)',
+                  fontWeight: 200,
+                  letterSpacing: '0.02em',
+                  lineHeight: 1.05,
+                  color: '#2C3844',
+                }}
+              >
+                Diseñamos<br />
+                <span style={{ fontStyle: 'italic', fontWeight: 300 }}>
+                  experiencias dulces
+                </span>
+                <br />
+                con intención.
+              </h1>
+
+              {/* Subtítulo */}
+              <p
+                className="mb-12 text-lg leading-relaxed"
+                style={{ color: '#6B7A8A', fontWeight: 300 }}
+              >
+                Repostería premium para empresas, eventos y familias
+                que cuidan cada detalle.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  to="/empresas"
+                  className="group inline-flex items-center gap-3 px-8 py-4 rounded-full transition-all"
+                  style={{
+                    background: '#8FA8BF',
+                    color: '#FFFFFF',
+                    fontSize: 13,
+                    letterSpacing: '0.2em',
+                    textTransform: 'uppercase',
+                    fontWeight: 500,
+                  }}
+                >
+                  Explorar servicios
+                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                </Link>
+                <Link
+                  to="/contacto"
+                  className="inline-flex items-center gap-3 px-8 py-4 rounded-full transition-all"
+                  style={{
+                    background: 'transparent',
+                    color: '#2C3844',
+                    border: '1.5px solid rgba(44, 56, 68, 0.2)',
+                    fontSize: 13,
+                    letterSpacing: '0.2em',
+                    textTransform: 'uppercase',
+                    fontWeight: 500,
+                  }}
+                >
+                  Contactar
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* ============ FILOSOFÍA (transición) ============ */}
